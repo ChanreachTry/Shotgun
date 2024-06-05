@@ -1,0 +1,31 @@
+LINKER:
+-lwinmm
+-lsfml-graphics
+-lsfml-window
+-lsfml-system
+-lsfml-audio
+-static-libstdc++
+-static-libgcc
+
+DIRECTORIES
+C:\SFML-2.6.1\lib
+C:\SFML-2.6.1\include
+
+
+
+Or use command below
+
+
+
+
+VSCODE COMPILE COMMANDS
+
+g++ -IC:/SFML-2.6.1/include main.cpp -o main.exe -LC:/SFML-2.6.1/lib -lsfml-audio -lsfml-graphics -lsfml-window -lsfml-system -lwinmm
+
+.\main
+
+or
+
+g++ -m64 -IC:/SFML-2.6.1/include -DSFML_STATIC main.cpp -o main.exe -LC:/SFML-2.6.1/lib -lsfml-audio-s -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lwinmm -lopengl32 -lfreetype -lgdi32 -lopenal32 -lflac -lvorbisenc -lvorbisfile -lvorbis -logg
+
+.\main
